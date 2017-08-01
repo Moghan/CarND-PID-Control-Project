@@ -43,12 +43,6 @@ int main(int argc, char *argv[])
     init_Kd = atof(argv[3]);
   }
   else {
-    /*  Description of effect from P, I and D components.
-    P: Increasing P makes the steering angle change more, in proportion to CTE. With to low P, the car can not cope with sharpe curves. To high P throws the car off the road.
-    I: I assumed no systematic bias exists and set it to zero. 
-    D: Counter overshooting. It dont behave like I expected. I probably set D very high. There is no smoothness to it. Feels like it kick in during one timespace which make it zero in the timespace after.
-    */
-
     init_Kp = -0.12;
     init_Ki = 0;
     init_Kd = -35.0;
